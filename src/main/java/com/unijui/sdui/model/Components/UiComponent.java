@@ -10,12 +10,12 @@ public class UiComponent {
 
     private String id;
     @JsonIgnore
-    private String tipo;
+    private String type;
 
 
-    public UiComponent(String id, String tipo){
+    public UiComponent(String id, String type){
         this.id = id;
-        this.tipo = tipo;
+        this.type = type;
     }
 }
 

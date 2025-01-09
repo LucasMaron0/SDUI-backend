@@ -16,12 +16,12 @@ public class SDUIController {
     private final SDUIService  service;
 
     @GetMapping("/1")
-    public ActionResponse getTela(){
-        return service.getTelaSDUI1();
+    public ActionResponse getScreen1(){
+        return service.getScreen1();
     }
 
     @GetMapping("/2")
-    public ActionResponse getTela2(){
-        return service.getTelaSDUI2();
+    public ActionResponse getScreen2(){
+        return service.getScreen2();
     }
 }

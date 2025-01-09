@@ -8,13 +8,13 @@ import lombok.Setter;
 @Setter
 public class ComponentDTO {
 
-    private String tipo;
-    private Object parametros;
+    private String type;
+    private Object params;
 
 
     public ComponentDTO(UiComponent component) {
-        this.tipo = component.getTipo();
-        this.parametros = component;
+        this.type = component.getType();
+        this.params = component;
     }
 }
 

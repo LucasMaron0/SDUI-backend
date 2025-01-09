@@ -1,6 +1,6 @@
 package com.unijui.sdui.model.action;
 
-import com.unijui.sdui.model.IResponseComponent;
+import com.unijui.sdui.model.DTO.IResponseComponent;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,11 +9,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ActionResponse {
-    private String acao;
-    private Object parametros;
+    private String action;
+    private Object params;
 
     public ActionResponse(IResponseComponent component){
-        this.acao = component.getAcao();
-        this.parametros = component.getParametros();
+        this.action = component.getAction();
+        this.params = component.getParams();
     }
 }

@@ -12,20 +12,20 @@ import java.util.List;
 @Setter
 public class ListUiComponent extends UiComponent {
 
-    private List<ComponentDTO> itensLista = new ArrayList<>();
+    private List<ComponentDTO> listItens = new ArrayList<>();
 
-    public ListUiComponent(String id, List<UiComponent> itensLista) {
-        super(id,"lista");
-        for(UiComponent c: itensLista){
-           adicionarComponente(c);
+    public ListUiComponent(String id, List<UiComponent> listItens) {
+        super(id,"list");
+        for(UiComponent c: listItens){
+           addComponent(c);
         }
     }
 
     public ListUiComponent(String id) {
-        super(id,"lista");
+        super(id,"list");
     }
 
-    public void adicionarComponente(UiComponent component){
-        this.itensLista.add(new ComponentDTO(component));
+    public void addComponent(UiComponent component){
+        this.listItens.add(new ComponentDTO(component));
     }
 }

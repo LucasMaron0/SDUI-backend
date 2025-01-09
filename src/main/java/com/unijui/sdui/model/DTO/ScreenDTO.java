@@ -1,6 +1,5 @@
 package com.unijui.sdui.model.DTO;
 
-import com.unijui.sdui.model.IResponseComponent;
 import com.unijui.sdui.model.Components.UiComponent;
 import com.unijui.sdui.utils.ActionConstants;
 import lombok.Getter;
@@ -16,18 +15,18 @@ public class ScreenDTO implements IResponseComponent {
 
     private List<ComponentDTO> componentes = new ArrayList<>();
 
-    public void adicionarComponente(UiComponent component){
+    public void addComponent(UiComponent component){
         this.componentes.add(new ComponentDTO(component));
     }
 
     @Override
-    public Object getParametros() {
+    public Object getParams() {
         return componentes;
     }
 
     @Override
-    public String getAcao() {
-        return ActionConstants.EXIBIR_TELA_SDUI;
+    public String getAction() {
+        return ActionConstants.SHOW_SDUI_SCREEN;
     }
 }
 
